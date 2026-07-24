@@ -12,7 +12,7 @@ public class LobbyMultiplayer {
     private final RankingRepository rankingRepository = new RankingRepository();
 
     public void iniciarJogo() {
-        // 1. Configuração de Jogadores
+        //Configuração de Jogadores
         String qtdStr = JOptionPane.showInputDialog(
                 null,
                 "Bem-vindo ao Multiplayer!\nQuantos jogadores vão participar?",
@@ -46,7 +46,7 @@ public class LobbyMultiplayer {
             nomes.add(nome);
         }
 
-        // 2. Rodada Regular
+        //Rodada Regular
         for (int i = 0; i < nomes.size(); i++) {
             String jogadorAtual = nomes.get(i);
 
@@ -70,7 +70,7 @@ public class LobbyMultiplayer {
             }
         }
 
-        // 3. Verificação de Empates e Desempate
+        //Verificação de Empates e Desempate
         if (nomes.size() > 1) {
             verificarETratarDesempate();
         } else {
@@ -89,7 +89,7 @@ public class LobbyMultiplayer {
         while (haEmpate) {
             Map<String, Integer> ranking = rankingRepository.getRankingGlobal();
 
-            // Encontra a pontuação máxima atual
+            // Encontra a pontuação maxima atual
             int maiorPontuacao = Integer.MIN_VALUE;
             for (int pontos : ranking.values()) {
                 if (pontos > maiorPontuacao) {
@@ -105,7 +105,7 @@ public class LobbyMultiplayer {
                 }
             }
 
-            // Se apenas 1 pessoa tem a maior pontuação, eh o campeao
+            // Se apenas 1 pessoa tem a maior pontuaçao, eh o campeao
             if (empatados.size() == 1) {
                 haEmpate = false;
                 exibirCampeao(empatados.get(0), maiorPontuacao);
