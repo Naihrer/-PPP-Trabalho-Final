@@ -2,21 +2,14 @@ package quiz.framework.modelo;
 
 import java.util.Objects;
 
-// Representa uma alternativa de resposta de uma Pergunta.
 public final class Alternativa {
-
     private final String texto;
 
     public Alternativa(String texto) {
-        if (texto == null || texto.isBlank()) {
-            throw new IllegalArgumentException("O texto da alternativa não pode ser vazio.");
-        }
         this.texto = texto;
     }
 
-    public String getTexto() {
-        return texto;
-    }
+    public String getTexto() { return texto; }
 
     @Override
     public boolean equals(Object o) {
@@ -27,12 +20,8 @@ public final class Alternativa {
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(texto);
-    }
+    public int hashCode() { return Objects.hash(texto); }
 
     @Override
-    public String toString() {
-        return texto;
-    }
+    public String toString() { return texto; }
 }
