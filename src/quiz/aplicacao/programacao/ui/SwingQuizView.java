@@ -23,7 +23,6 @@ public class SwingQuizView implements QuizView {
 
     @Override
     public void exibirPergunta(Pergunta pergunta) {
-        // A exibição ocorre de forma síncrona dentro do método obterResposta
     }
 
     @Override
@@ -38,7 +37,7 @@ public class SwingQuizView implements QuizView {
         labelEnunciado.setBorder(BorderFactory.createEmptyBorder(15, 15, 5, 15));
         dialog.add(labelEnunciado, BorderLayout.NORTH);
 
-        // Painel das Alternativas (Radio Buttons)
+        // Painel das Alternativas 
         JPanel panelOpcoes = new JPanel();
         panelOpcoes.setLayout(new BoxLayout(panelOpcoes, BoxLayout.Y_AXIS));
         panelOpcoes.setBorder(BorderFactory.createEmptyBorder(5, 20, 10, 20));
@@ -62,7 +61,7 @@ public class SwingQuizView implements QuizView {
 
         dialog.add(panelOpcoes, BorderLayout.CENTER);
 
-        // Botão de Confirmação
+        // Botão de Confirmaçao
         final Alternativa[] respostaEscolhida = new Alternativa[1];
         JButton btnConfirmar = new JButton("Confirmar Resposta");
         btnConfirmar.setFont(new Font("SansSerif", Font.BOLD, 12));
