@@ -54,5 +54,6 @@ Certifique-se de ter o Java JDK (versão 8 ou superior) instalado em sua máquin
 
 ## Autores
 
-*   Rhian
-*   Angelo
+*   Rhian Emanuel
+*   Daniel 
+*   Matheus Tabchoury
