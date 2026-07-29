@@ -55,5 +55,5 @@ Certifique-se de ter o Java JDK (versão 8 ou superior) instalado em sua máquin
 ## Autores
 
 *   Rhian Emanuel Rodrigues Pádua - 12411BCC051
-*   Daniel 
+*   Daniel Cardoso Gentil - 12311BCC062 
 *   Matheus de Andrade Tabchoury - 12311BCC066
